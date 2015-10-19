@@ -29,6 +29,7 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     //Testing
+    //Testing Windows machine on Guo's classroom computers, works fine
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
