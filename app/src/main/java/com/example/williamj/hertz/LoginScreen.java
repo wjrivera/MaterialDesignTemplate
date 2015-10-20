@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -15,18 +16,50 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
     }
+
+    EditText username = (EditText)findViewById(R.id.userName);
+    EditText password = (EditText)findViewById(R.id.passwordInput);
+    int counter = 3;
+
+    //Login Function
+    public void login(View view) {
+        if (username.getText().toString().equals("admin") &&
+                password.getText().toString().equals("admin")) {
+
+            //correct password
+
+        } else {
+
+            //wrong password
+            counter--;
+        }
+
+        //Too many login sessions
+        if(counter == 0){
+
+            //exceeded the number of login sessions
+
+        }
+
+    }
+
+    //Register Function
+    public void register(View view) {
+
+        //register function
+
+    }
+
+    //Forgot Password Function
+    public void forgotPassword(View view) {
+
+        //register function
+
+    }
+
 
     //Testing
     //Testing Windows machine on Guo's classroom computers, works fine
