@@ -5,7 +5,6 @@
     android:paddingLeft="5dp"
     android:paddingTop="5dp"
     android:paddingRight="5dp"
-    android:background="@drawable/sky"
     tools:context=".LoginScreen">
 
     <LinearLayout
@@ -13,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="right"
-        android:background="@drawable/hertzmenu"
         android:id="@+id/linearLayout">
 
 
@@ -22,7 +20,6 @@
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/menu3bars"
 
             android:id="@+id/imageButton" />
 
@@ -31,7 +28,6 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="240dp"
-        android:background="@drawable/rectangle"
         android:layout_alignParentBottom="true"
         android:id="@+id/tableLayout">
         <TableRow
@@ -103,17 +99,6 @@
                 android:theme="@style/Widget.AppCompat.Button"/>
         </LinearLayout>
     </TableLayout>
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox2"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="273dp"
-        android:layout_marginStart="273dp" />
 
 
 </RelativeLayout>
