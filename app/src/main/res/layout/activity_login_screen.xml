@@ -1,8 +1,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LoginScreen"
-    android:background="@drawable/parkbench">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    tools:context=".LoginScreen">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -68,7 +71,6 @@
                 android:id="@+id/signButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="login"
                 android:text="Sign In"
                 android:textSize="20dp"
                 android:theme="@style/Widget.AppCompat.Button.Borderless"
@@ -87,7 +89,6 @@
                 android:id="@+id/forgotPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="forgotPassword"
                 android:text="Forgot Password"
                 android:textSize="10dp"
                 android:theme="@style/Widget.AppCompat.Button" />
@@ -95,7 +96,6 @@
                 android:id="@+id/registerButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="register"
                 android:text="Register"
                 android:textSize="10dp"
                 android:theme="@style/Widget.AppCompat.Button"/>

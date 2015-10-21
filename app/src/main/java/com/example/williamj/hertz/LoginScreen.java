@@ -5,7 +5,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -20,45 +19,7 @@ public class LoginScreen extends AppCompatActivity {
 
     }
 
-    EditText username = (EditText)findViewById(R.id.userName);
-    EditText password = (EditText)findViewById(R.id.passwordInput);
-    int counter = 3;
 
-    //Login Function
-    public void login(View view) {
-        if (username.getText().toString().equals("admin") &&
-                password.getText().toString().equals("admin")) {
-
-            //correct password
-
-        } else {
-
-            //wrong password
-            counter--;
-        }
-
-        //Too many login sessions
-        if(counter == 0){
-
-            //exceeded the number of login sessions
-
-        }
-
-    }
-
-    //Register Function
-    public void register(View view) {
-
-        //register function
-
-    }
-
-    //Forgot Password Function
-    public void forgotPassword(View view) {
-
-        //register function
-
-    }
 
 
     //Testing
